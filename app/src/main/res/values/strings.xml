@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hook</string>
+    <string name="reject_button">Nhook</string>
+    <string name="aproval_button">Hook</string>
 </resources>
