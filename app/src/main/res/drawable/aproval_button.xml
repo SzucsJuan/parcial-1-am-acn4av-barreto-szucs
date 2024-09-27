@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <corners
-        android:topRightRadius="5dp"
-        android:bottomLeftRadius="5dp"
-        android:radius="50dp"/>
+        android:topLeftRadius="40dp"
+        android:bottomRightRadius="40dp"/>
 
     <gradient
-        android:centerX="float"
-        android:centerY="float"
+        android:centerX="0.5"
+        android:centerY="0.5"
         android:endColor="@color/black"
-        android:gradientRadius="integer"
+        android:gradientRadius="90dp"
         android:startColor="@color/black"
         android:type="linear"/>
 
