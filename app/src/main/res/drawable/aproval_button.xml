@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <corners
         android:topLeftRadius="40dp"
@@ -7,15 +6,12 @@
     <gradient
         android:centerX="0.5"
         android:centerY="0.5"
-        android:endColor="@color/black"
+        android:endColor="@color/white"
         android:gradientRadius="90dp"
-        android:startColor="@color/black"
+        android:startColor="@color/white"
         android:type="linear"/>
 
     <stroke
         android:width="4dp"
-        android:color="@color/black"/>
-
-    <solid
-        android:color="@color/primary"/>
+        android:color="@color/white"/>
 </shape>
