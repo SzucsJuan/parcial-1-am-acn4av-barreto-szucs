@@ -1,6 +1,7 @@
 package com.example.parcial_1_am_acn4av_barreto_szucs;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -26,7 +27,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        LogoComponent logoComponent = findViewById(R.id. app_logo);
+        logoComponent.setValue("HOOK");
     }
+
     public void AprovalBtn(View view){
         Toast.makeText(getApplicationContext(),"Bien maquina, ahora calma la fiera, yo te aviso si esta para hablarle", Toast.LENGTH_SHORT).show();
     }
