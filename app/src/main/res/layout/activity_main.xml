@@ -10,7 +10,7 @@
 
     <com.example.parcial_1_am_acn4av_barreto_szucs.LogoComponent
         android:id="@+id/app_logo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:value="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,18 +24,64 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="55dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="6dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/app_logo">
 
-        <ImageView
-            android:id="@+id/user_image"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/messi" />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:alpha="0.9"
+                android:src="@drawable/messi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lionel Messi"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/ac_font"
+                    android:textSize="24sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/user_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="37"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/ac_font"
+                    android:textSize="18sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/user_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Argentina"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/ac_font"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </FrameLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -56,11 +102,12 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="12dp"
             android:background="@drawable/tag_button"
-            app:backgroundTint="@color/coral_tags"
+            app:backgroundTint="@color/secondary_color"
             android:padding="8dp"
             android:text="Fútbol"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tag2"
@@ -69,11 +116,12 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="12dp"
             android:background="@drawable/tag_button"
-            app:backgroundTint="@color/coral_tags"
+            app:backgroundTint="@color/secondary_color"
             android:padding="8dp"
             android:text="Música"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tag3"
@@ -82,23 +130,25 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="12dp"
             android:background="@drawable/tag_button"
-            app:backgroundTint="@color/coral_tags"
+            app:backgroundTint="@color/secondary_color"
             android:padding="8dp"
             android:text="Mates"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/primary_color"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tag4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/tag_button"
-            app:backgroundTint="@color/coral_tags"
+            app:backgroundTint="@color/secondary_color"
             android:layout_marginTop="10dp"
             android:padding="8dp"
             android:text="Truco"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/primary_color"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -111,9 +161,9 @@
         android:background="@drawable/reject_button"
         android:onClick="RejectBtn"
         android:text="@string/reject_button"
-        android:textColor="@color/button_text_color"
+        android:textColor="@color/secondary_color"
         android:textSize="17sp"
-        app:backgroundTint="@color/primary"
+        app:backgroundTint="@color/primary_color"
         app:layout_constraintEnd_toStartOf="@+id/aproval_button"
         app:layout_constraintStart_toStartOf="@+id/card"
         app:layout_constraintTop_toBottomOf="@+id/card" />
@@ -127,9 +177,9 @@
         android:background="@drawable/aproval_button"
         android:onClick="AprovalBtn"
         android:text="@string/aproval_button"
-        android:textColor="@color/button_text_color"
+        android:textColor="@color/secondary_color"
         android:textSize="17sp"
-        app:backgroundTint="@color/primary"
+        app:backgroundTint="@color/primary_color"
         app:layout_constraintEnd_toEndOf="@+id/card"
         app:layout_constraintStart_toEndOf="@+id/reject_button"
         app:layout_constraintTop_toBottomOf="@+id/card" />

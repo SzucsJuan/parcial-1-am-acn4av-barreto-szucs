@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary">#3abcf9</color>
-    <color name="coral_tags">#FF6F61</color>
-    <color name="button_text_color">#FFCDD2</color>
+    <color name="primary_color">#50159a</color>
+    <color name="secondary_color">#FFCDD2</color>
+    <!--<color name="coral_tags">#FF6F61</color>-->
 </resources>
