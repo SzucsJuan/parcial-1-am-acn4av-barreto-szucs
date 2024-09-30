@@ -4,5 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary_color">#50159a</color>
     <color name="secondary_color">#FFCDD2</color>
-    <!--<color name="coral_tags">#FF6F61</color>-->
+    <color name="start_color_gradient">#00000000</color>
+    <color name="end_color_gradient">#802F2F2F</color>
+    <color name="background_text">#80000000</color>
 </resources>
