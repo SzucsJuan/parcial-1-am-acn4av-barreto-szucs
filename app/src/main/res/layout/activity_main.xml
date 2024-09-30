@@ -39,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/messi" />
+                android:src="@drawable/img_messi" />
 
             <View
                 android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                         android:layout_width="27dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="8dp"
-                        android:src="@drawable/argentina_flag" />
+                        android:src="@drawable/img_argentina_flag" />
 
                 </LinearLayout>
 
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="18dp"
-            android:background="@drawable/tag_button"
+            android:background="@drawable/button_tag"
             app:backgroundTint="@color/secondary_color"
             android:padding="8dp"
             android:text="Fútbol"
@@ -150,7 +150,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="18dp"
-            android:background="@drawable/tag_button"
+            android:background="@drawable/button_tag"
             app:backgroundTint="@color/secondary_color"
             android:padding="8dp"
             android:text="Música"
@@ -164,7 +164,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="18dp"
-            android:background="@drawable/tag_button"
+            android:background="@drawable/button_tag"
             app:backgroundTint="@color/secondary_color"
             android:padding="8dp"
             android:text="Mates"
@@ -176,7 +176,7 @@
             android:id="@+id/tag4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/tag_button"
+            android:background="@drawable/button_tag"
             app:backgroundTint="@color/secondary_color"
             android:layout_marginTop="10dp"
             android:padding="8dp"
@@ -193,7 +193,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="50dp"
-        android:background="@drawable/reject_button"
+        android:background="@drawable/button_reject"
         android:onClick="RejectBtn"
         android:text="@string/reject_button"
         android:textColor="@color/secondary_color"
@@ -209,7 +209,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="150dp"
-        android:background="@drawable/aproval_button"
+        android:background="@drawable/button_approval"
         android:onClick="AprovalBtn"
         android:text="@string/aproval_button"
         android:textColor="@color/secondary_color"
