@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">parcial-1-am-acn4av-barreto-szucs</string>
+    <string name="app_name">Hook</string>
+    <string name="logo">Hook</string>
+    <string name="reject_button">Nhook</string>
+    <string name="aproval_button">Hook</string>
 </resources>

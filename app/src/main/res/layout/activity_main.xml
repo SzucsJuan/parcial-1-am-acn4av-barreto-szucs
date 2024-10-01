@@ -7,13 +7,216 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <com.example.parcial_1_am_acn4av_barreto_szucs.LogoComponent
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:value="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="55dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_logo">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_messi" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:background="@color/background_text">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lionel Messi"
+                        android:letterSpacing="0.1"
+                        android:fontFamily="@font/ac_font"
+                        android:textSize="26sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="3" />
+
+                    <ImageView
+                        android:id="@+id/user_flag"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/img_argentina_flag" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/user_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="37"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/ac_font"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3" />
+
+                <TextView
+                    android:id="@+id/user_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buenos Aires"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/ac_font"
+                    android:textSize="21sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/tags_hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/button_tag"
+            app:backgroundTint="@color/secondary_color"
+            android:padding="8dp"
+            android:text="Fútbol"
+            android:textSize="15sp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/button_tag"
+            app:backgroundTint="@color/secondary_color"
+            android:padding="8dp"
+            android:text="Música"
+            android:textSize="15sp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/button_tag"
+            app:backgroundTint="@color/secondary_color"
+            android:padding="8dp"
+            android:text="Mates"
+            android:textSize="15sp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tag4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_tag"
+            app:backgroundTint="@color/secondary_color"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:text="Truco"
+            android:textSize="15sp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reject_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_reject"
+        android:onClick="RejectBtn"
+        android:text="@string/reject_button"
+        android:textColor="@color/secondary_color"
+        android:textSize="17sp"
+        app:backgroundTint="@color/primary_color"
+        app:layout_constraintEnd_toStartOf="@+id/aproval_button"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card" />
+
+    <Button
+        android:id="@+id/aproval_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_approval"
+        android:onClick="AprovalBtn"
+        android:text="@string/aproval_button"
+        android:textColor="@color/secondary_color"
+        android:textSize="17sp"
+        app:backgroundTint="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintStart_toEndOf="@+id/reject_button"
+        app:layout_constraintTop_toBottomOf="@+id/card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
