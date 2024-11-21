@@ -47,11 +47,14 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {
 
     implementation(libs.appcompat)
+    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    implementation("com.google.firebase:firebase-auth")
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
