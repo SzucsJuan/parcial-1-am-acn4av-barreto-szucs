@@ -1,6 +1,20 @@
 <resources>
+    <!-- Main -->
     <string name="app_name">Hook</string>
     <string name="logo">Hook</string>
     <string name="reject_button">Nhook</string>
     <string name="aproval_button">Hook</string>
+
+    <!-- Login -->
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="recover_password">Recuperar Contraseña</string>
+    <string name="recover">Recuperar</string>
+    <string name="register">Registrarse</string>
+    <string name="volver">Volver</string>
+    <string name="email_phone">Email/Teléfono</string>
+    <string name="name">Nombre</string>
+    <string name="phone">Teléfono</string>
+
 </resources>
