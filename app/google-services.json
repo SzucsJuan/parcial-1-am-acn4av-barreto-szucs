@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "508160702057",
+    "project_id": "hook-ebcc4",
+    "storage_bucket": "hook-ebcc4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508160702057:android:6fd2f55f4236b3758bd4f8",
+        "android_client_info": {
+          "package_name": "login.jian.hook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa5_ms3oSuGJZNnNfKTBJRMsu27ov5wGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

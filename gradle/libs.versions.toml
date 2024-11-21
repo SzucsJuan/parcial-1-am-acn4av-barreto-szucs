@@ -15,6 +15,8 @@ composeBom = "2024.04.01"
 
 [libraries]
 cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+google-firebase-auth = { module = "com.google.firebase:firebase-auth" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
