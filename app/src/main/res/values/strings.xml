@@ -13,6 +13,7 @@
     <string name="recover">Recuperar</string>
     <string name="register">Registrarse</string>
     <string name="volver">Volver</string>
+    <string name="logout">Cerrar Sesion</string>
     <string name="email_phone">Email/Teléfono</string>
     <string name="name">Nombre</string>
     <string name="phone">Teléfono</string>
