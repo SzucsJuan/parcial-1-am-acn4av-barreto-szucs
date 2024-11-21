@@ -16,5 +16,6 @@
     <string name="email_phone">Email/Teléfono</string>
     <string name="name">Nombre</string>
     <string name="phone">Teléfono</string>
+    <string name="title_activity_login">LoginActivity</string>
 
 </resources>
