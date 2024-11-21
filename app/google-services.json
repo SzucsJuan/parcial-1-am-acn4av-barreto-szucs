@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "508160702057",
-    "project_id": "hook-ebcc4",
-    "storage_bucket": "hook-ebcc4.firebasestorage.app"
+    "project_number": "237121199643",
+    "project_id": "parcial-1-am-acn4av",
+    "storage_bucket": "parcial-1-am-acn4av.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:508160702057:android:6fd2f55f4236b3758bd4f8",
+        "mobilesdk_app_id": "1:237121199643:android:e3a2c2ce7b4a9e0666e2be",
         "android_client_info": {
-          "package_name": "login.jian.hook"
+          "package_name": "com.example.parcial_1_am_acn4av_barreto_szucs"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAa5_ms3oSuGJZNnNfKTBJRMsu27ov5wGU"
+          "current_key": "AIzaSyDefhQFuxloRORAA4jxD2mbuuHWbGG1VRo"
         }
       ],
       "services": {
