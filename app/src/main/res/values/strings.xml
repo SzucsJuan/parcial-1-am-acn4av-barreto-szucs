@@ -19,4 +19,11 @@
     <string name="phone">Teléfono</string>
     <string name="title_activity_login">LoginActivity</string>
 
+    <!-- Profile -->
+    <string name="save">Guardar cambios</string>}
+    <string name="change_photo">Cambiar foto</string>
+    <string name="age">Edad</string>
+    <string name="location">Ubicacion</string>
+
+
 </resources>
