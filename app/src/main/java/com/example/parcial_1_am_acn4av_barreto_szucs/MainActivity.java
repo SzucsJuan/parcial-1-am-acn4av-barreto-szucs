@@ -50,10 +50,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void AprovalBtn(View view){
-        Toast.makeText(getApplicationContext(),"Bien maquina, ahora calma la fiera, yo te aviso si esta para hablarle", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(MainActivity.this, AprovalActivity.class);
+        startActivity(intent);
     }
 
     public void RejectBtn(View view){
-        Toast.makeText(getApplicationContext(),"Que mal, yo pense que era tu tipo", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(MainActivity.this, RejectActivity.class);
+        startActivity(intent);
     }
 }
