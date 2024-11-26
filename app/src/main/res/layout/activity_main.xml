@@ -13,15 +13,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:value="@string/logo"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/logoutBtn"
-            android:layout_width="0dp"
+        <ImageView
+            android:id="@+id/profile_logo"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/logout" />
+            android:src="@drawable/icon_profile"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/chat_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_bubble_chat"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
     </com.example.parcial_1_am_acn4av_barreto_szucs.LogoComponent>
 
     <androidx.cardview.widget.CardView
