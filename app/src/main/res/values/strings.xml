@@ -6,6 +6,7 @@
     <string name="aproval_button">Hook</string>
     <string name="hooked">HOOKED</string>
     <string name="hooknt">HOOKN\'T</string>
+    <string name="profile">PROFILE</string>
 
     <!-- Login -->
     <string name="email">Email</string>
@@ -26,7 +27,6 @@
     <string name="change_photo">Cambiar foto</string>
     <string name="age">Edad</string>
     <string name="location">Ubicacion</string>
-
 
 
 </resources>

@@ -1,8 +1,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
 
     <com.example.parcial_1_am_acn4av_barreto_szucs.LogoComponent
@@ -12,7 +14,24 @@
         app:value="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+    >
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/profile"
+            android:onClick="ProfileBtn"
+            android:scaleType="centerInside"
+            app:icon="@drawable/icon_profile"
+            app:iconSize="34dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.example.parcial_1_am_acn4av_barreto_szucs.LogoComponent>
 
 
     <ImageView
@@ -42,49 +61,58 @@
         android:id="@+id/edit_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/text_background"
         android:hint="@string/name"
         android:inputType="text"
+        android:minHeight="48dp"
         android:padding="12dp"
-        android:background="@drawable/text_background"
         android:textColor="@color/black"
         android:textColorHint="@color/gray"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/btn_change_photo"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_photo" />
 
     <EditText
         android:id="@+id/edit_age"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/text_background"
         android:hint="@string/age"
         android:inputType="number"
+        android:minHeight="48dp"
         android:padding="12dp"
-        android:background="@drawable/text_background"
         android:textColor="@color/black"
         android:textColorHint="@color/gray"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/edit_name"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_name" />
 
     <EditText
         android:id="@+id/edit_location"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/text_background"
         android:hint="@string/location"
         android:inputType="text"
+        android:minHeight="48dp"
         android:padding="12dp"
-        android:background="@drawable/text_background"
         android:textColor="@color/black"
         android:textColorHint="@color/gray"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/edit_age"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_age" />
 
     <Button
         android:id="@+id/btn_save"
@@ -95,5 +123,16 @@
         app:layout_constraintTop_toBottomOf="@id/edit_location"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/logout"
+        app:layout_constraintTop_toBottomOf="@id/btn_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

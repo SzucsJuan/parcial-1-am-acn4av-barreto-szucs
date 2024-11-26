@@ -12,16 +12,35 @@
         android:id="@+id/app_logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:value="@string/logo"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:value="@string/logo">
+
+        <ImageView
+            android:id="@+id/chat_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/icon_bubble_chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/logoutBtn"
-            android:layout_width="0dp"
+            android:id="@+id/profile_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/logout" />
+            android:contentDescription="@string/profile"
+            android:onClick="ProfileBtn"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:elevation="10dp"
+            app:icon="@drawable/icon_profile"
+            app:iconSize="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </com.example.parcial_1_am_acn4av_barreto_szucs.LogoComponent>
 
     <androidx.cardview.widget.CardView
