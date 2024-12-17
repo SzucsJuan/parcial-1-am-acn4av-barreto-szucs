@@ -108,7 +108,12 @@ public class ProfileActivity extends AppCompatActivity {
         db.collection("users").document(userId)
                 .update("name", name, "age", Integer.parseInt(age), "location", location)
                 .addOnSuccessListener(aVoid -> {
-                    Toast.makeText(this, "Datos actualizados exitosamente.", Toast.LENGTH_SHORT).show();
+                    db.collection("users").document(userId).get().addOnSuccessListener(documentSnapshot -> {
+                        if(documentSnapshot.exists()) {
+                            String updatedName = documentSnapshot.getString("name");
+                            Toast.makeText(this, "Hola, " + updatedName + ", datos actualizados correctamente", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 })
                 .addOnFailureListener(e -> {
                     Toast.makeText(this, "Error al actualizar los datos: " + e.getMessage(), Toast.LENGTH_SHORT).show();
